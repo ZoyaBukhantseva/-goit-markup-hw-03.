@@ -1,0 +1,194 @@
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --text-buttom-color: #ffffff;
+  --acent-color: #2196f3;
+  --bgr-color-acent: #2f303a;
+  --bgr-color:#E5E5E5;
+  --bgr-second-color :#F5F4FA;
+ 
+}
+.link {
+  text-decoration: none;
+}
+.list
+{list-style: none; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;}
+.logo {
+  color: var(--acent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+ 
+}
+ .logo:focus{
+  text-decoration:underline
+}
+.header{
+  background-color: var(--text-buttom-color);
+}
+.header-link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--acent-color);
+}
+.header-contact  {
+  color:var(--second-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+ letter-spacing: 0.02em;
+  text-decoration: none;
+ }
+
+ .header-contact:hover, .header-contact:focus{
+  color: var(--acent-color);
+ }
+.portfolio-button{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--main-text-color);
+background: #F5F4FA;
+border-radius: 4px;
+}
+.portfolio-button:hover, .portfolio-button:focus {
+color:var(--text-buttom-color);
+background-color: var(--acent-color);
+cursor: pointer;
+}
+.hero{
+   background-color:var(--bgr-color-acent);}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-buttom-color);
+  text-align: center;
+ }
+  
+.hero-button {
+  font-family: "Roboto",sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-buttom-color);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.peculiarities-list h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-style: normal;
+  color:var(--main-text-color);
+}
+.peculiarities-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.about-tittle,
+.team-tittle {
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.team{
+  background-color: var(--bgr-second-color);
+}
+.team-list  h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.footer {
+  background-color: var(--bgr-color-acent);
+}
+.footer-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+ .footer-list:hover,.footer-list:focus{
+  color: var(--acent-color);
+ }
+a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]
+{
+  color: var(--text-buttom-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
+  color:var(--acent-color);
+}
+.gallery p {
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.88;
+ letter-spacing: 0.03em;
+ color: var(--second-text-color)
+}
+.gallery h2 {
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--main-text-color);
+}
