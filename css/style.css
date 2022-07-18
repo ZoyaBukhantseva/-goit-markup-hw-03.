@@ -17,6 +17,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;}
+
+ p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+ }
+ ul, ol{ margin: 0;}
+  
 .logo {
   color: var(--acent-color);
   font-family: Raleway;
@@ -25,13 +31,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
- 
+  
 }
  .logo:focus{
   text-decoration:underline
 }
 .header{
   background-color: var(--text-buttom-color);
+
 }
 .header-link {
   color: var(--main-text-color);
@@ -39,7 +46,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none
+  text-decoration: none;
+    
 }
 .header-link:hover,
 .header-link:focus {
@@ -74,8 +82,14 @@ color:var(--text-buttom-color);
 background-color: var(--acent-color);
 cursor: pointer;
 }
+.container {
+  width: 1200px;
+  margin: auto;
+  outline: solid red;}
+
 .hero{
-   background-color:var(--bgr-color-acent);}
+   background-color:var(--bgr-color-acent);
+  }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -84,9 +98,14 @@ cursor: pointer;
   text-transform: uppercase;
   color: var(--text-buttom-color);
   text-align: center;
- }
-  
-.hero-button {
+  margin-bottom: 30px;
+  width: 696px;
+  padding-top: 200px;
+  margin: auto;
+
+
+}
+  .hero-button {
   font-family: "Roboto",sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -101,6 +120,8 @@ cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 40px;
+  
 }
 
 .peculiarities-list h3 {
@@ -132,6 +153,8 @@ cursor: pointer;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+
+
 }
 .team{
   background-color: var(--bgr-second-color);
