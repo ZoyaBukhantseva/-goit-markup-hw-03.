@@ -25,7 +25,9 @@ body {
 margin: 0;
 padding: 0;}
 
-img {display: block;}
+img {display: block;
+  min-width: 100%;
+  height: auto;}
   
 .logo {
   color: var(--acent-color);
@@ -106,20 +108,21 @@ margin-left: auto;}
 
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: solid teal;
   }
 
 .hero{
    background-color:var(--bgr-color-acent);
- 
+   padding-top: 200px;
+  padding-bottom: 280px;
   }
   .hero>.container{
-    padding-top: 200px;
-    padding-bottom: 280px;
+    
     text-align: center;
   }
 .hero-title {
@@ -155,9 +158,10 @@ margin-left: auto;}
 }
 .peculiarities-list{
   display: flex;
+  gap: 30px;
  
 }
-.peculiarities>.container{
+.peculiarities{
   padding-top: 94px;
  
 }
@@ -171,7 +175,10 @@ margin-left: auto;}
   font-style: normal;
   color:var(--main-text-color);
 }
-.peculiarities-item {
+.peculiarities-item{
+
+}
+.peculiarities p {
   margin-top: 10px;
 
   font-family: "Roboto";
@@ -196,7 +203,7 @@ margin-left: auto;}
   color: var(--main-text-color);
   }
 
-.about>.container {
+.about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -210,11 +217,11 @@ margin-left: auto;}
 
 .team{
   background-color: var(--bgr-second-color);
-}
-.team>.container{
+
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-list{
   display: flex;
 }
@@ -230,38 +237,59 @@ margin-left: auto;}
   color: var(--main-text-color);
 }
 .team-item {
-  
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;;
 
-  text-align: center;
-  font-style: normal;
-  font-weight: 400; 
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
 }
 .team-item p{
-  margin-top: 10px;
+  padding-bottom: 30px;
+
+  text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 }
 .team-item h3{
-  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 .footer {
   background-color: var(--bgr-color-acent);
-}
-.footer-link{
-  display: block;
   padding-top: 60px;
-  padding-bottom: 20px;
-}
-.footer-list {
   padding-bottom: 60px;
-  font-style: normal;
+}
+.footer-logo {
+  display: block;
+ margin-bottom: 20px;
+ 
+color: var(--acent-color);
+font-family: Raleway;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;}
+
+
+  .footer-item>a {
+font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
+  }
+
  .footer-list:hover,.footer-list:focus{
   color: var(--acent-color);
  }
@@ -281,11 +309,11 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]
 a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
   color:var(--acent-color);
 }
-
-.portfolio-nav{
+.portfolio-list{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .box {
   display: flex;
   justify-content: center;
@@ -308,20 +336,19 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   background: #F5F4FA;
+  border: transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--text-buttom-color);
   background-color: var(--acent-color);
-  cursor: pointer;
-}
+  }
 
 .text-container p {
-  padding-top: ;: 4px;
-padding-bottom: 20px;
-  font-style: normal;
+   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -330,7 +357,8 @@ padding-bottom: 20px;
 }
 
 .text-container h2 {
-  padding-top: 20px;
+  margin-bottom: 4px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -348,4 +376,7 @@ padding-bottom: 20px;
 .text-container{
 flex-basis: calc((100%-60px)/3);
 border-bottom: 1px solid #EEEEEE;
+border-right:1px solid #EEEEEE ;
+border-left: 1px solid #EEEEEE ;
+padding: 20px 24px;
 }
