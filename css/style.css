@@ -54,10 +54,17 @@ border-bottom: 1px solid #ECECEC;
 display: flex;
 align-items: center;}
 
+.header-nav{
+  display: flex;
+}
 
 .header-list{
 display: flex;
 margin-left: 93px;}
+
+/* .header-contact-list{
+  display: flex;
+} */
 
 .header-list .header-item:not(:last-child){
   margin-right: 50px;
